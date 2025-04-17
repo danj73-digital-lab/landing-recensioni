@@ -1,60 +1,119 @@
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
-  color: #333;
+  background: #f4f6f8;
+  color: #222;
 }
+
 .header {
-  background: #007b9a;
+  background-color: #007b9a;
   color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
-.summary {
-  margin-top: 1rem;
+
+.score-summary {
+  background-color: white;
+  color: #333;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.score {
-  font-size: 1.5rem;
+
+.average-score {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
+
 .stars {
   color: gold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-.count {
-  margin-top: 0.5rem;
+
+.total-reviews {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 600;
 }
+
+.score-distribution {
+  margin-top: 1rem;
+}
+
+.score-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.25rem 0;
+}
+
+.bar {
+  flex: 1;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: #007b9a;
+}
+
 .filters {
-  background: white;
-  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  justify-content: space-around;
-  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
 .reviews {
-  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
+
 .review {
   background: white;
-  margin-bottom: 1rem;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.review h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+
+.review-header {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
-.review span {
-  color: #666;
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.review-date {
   font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
 }
+
 .footer {
   text-align: center;
   padding: 1rem;
   background: #007b9a;
   color: white;
+  margin-top: 2rem;
 }
