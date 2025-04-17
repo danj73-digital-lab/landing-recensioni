@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recensioni dei clienti - Portale Sardegna</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensioni - AI Demo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="hero">
-      <h1>Recensioni su Portale Sardegna</h1>
-      <div class="summary-box">
-        <div class="rating">
-          <div class="score">4.3</div>
-          <div class="stars">★★★★☆</div>
-          <div class="count">1.320 recensioni</div>
-        </div>
-        <div class="distribution">
-          <div><span>5 stelle</span><div class="bar"><div style="width: 65%"></div></div></div>
-          <div><span>4 stelle</span><div class="bar"><div style="width: 20%"></div></div></div>
-          <div><span>3 stelle</span><div class="bar"><div style="width: 8%"></div></div></div>
-          <div><span>2 stelle</span><div class="bar"><div style="width: 4%"></div></div></div>
-          <div><span>1 stella</span><div class="bar"><div style="width: 3%"></div></div></div>
-        </div>
-      </div>
-      <div class="filters">
-        <select><option>Tutte le valutazioni</option></select>
-        <select><option>Ordina per: Più recenti</option></select>
-        <select><option>Categoria: Servizio</option></select>
-      </div>
+    <header>
+        <h1>Recensioni Clienti</h1>
     </header>
 
-    <main class="reviews">
-      <div class="review-card">
-        <div class="top">
-          <div class="user">Katiuscia</div>
-          <div class="date">2 giorni fa</div>
+    <section class="recensioni-summary">
+        <div class="average-rating">
+            <h2>Valutazione Media: 4.5 ⭐</h2>
+            <p>Basato su <strong>1,234 recensioni</strong></p>
         </div>
-        <div class="rating-line">
-          <div class="stars">★★★★☆</div>
-          <div class="numeric">4.0</div>
+        <div class="ratings-distribution">
+            <p>⭐⭐⭐⭐⭐ 65%</p>
+            <p>⭐⭐⭐⭐ 20%</p>
+            <p>⭐⭐⭐ 10%</p>
+            <p>⭐⭐ 3%</p>
+            <p>⭐ 2%</p>
         </div>
-        <p class="text">
-          Una cosa inaspettata e a volte data anche per scontato che ha reso questo viaggio una splendida e rilassante esperienza è stata la correttezza, gentilezza e simpatia del personale dell’hotel e dei ragazzi di ciaoclub.
-        </p>
-        <p class="text">
-          È stata nel complesso proprio una bella vacanza rigenerante per tutta la famiglia, una cosa però che potrebbe portare il tutto ad un livello superiore potrebbe essere aggiungere un po' di più attività nella parte dell'area sportiva.
-        </p>
-        <p class="exp-date">Data dell’esperienza: 23 luglio 2024</p>
-      </div>
-    </main>
+    </section>
 
-    <footer class="footer">© 2025 Portale Sardegna - Tutti i diritti riservati</footer>
-  </div>
+    <section class="filters">
+        <label>Filtra per stelle:</label>
+        <select id="filter-stars">
+            <option value="all">Tutte</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+        </select>
+
+        <label>Filtra per data:</label>
+        <input type="date" id="filter-date">
+
+        <label>Filtra per categoria:</label>
+        <select id="filter-category">
+            <option value="all">Tutte</option>
+            <option value="servizio">Servizio</option>
+            <option value="struttura">Struttura</option>
+        </select>
+    </section>
+
+    <section class="recensioni-list">
+        <div class="recensione">
+            <h3>Mario Rossi - 12 Aprile 2025</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Esperienza fantastica! Servizio impeccabile e staff cordiale.</p>
+        </div>
+
+        <div class="recensione">
+            <h3>Anna Bianchi - 8 Aprile 2025</h3>
+            <p>⭐⭐⭐⭐</p>
+            <p>Buona esperienza, ma qualche dettaglio potrebbe essere migliorato.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Pagina demo creata con AI</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
