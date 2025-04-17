@@ -3,52 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recensioni Portale Sardegna</title>
+  <title>Recensioni dei clienti - Portale Sardegna</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <h1>Recensioni dei clienti</h1>
-    <div class="score-summary">
-      <div class="average-score">
-        <span class="score-number">4.3</span>
-        <div class="stars">★★★★☆</div>
-        <span>su 5</span>
+  <div class="container">
+    <header class="hero">
+      <h1>Recensioni su Portale Sardegna</h1>
+      <div class="summary-box">
+        <div class="rating">
+          <div class="score">4.3</div>
+          <div class="stars">★★★★☆</div>
+          <div class="count">1.320 recensioni</div>
+        </div>
+        <div class="distribution">
+          <div><span>5 stelle</span><div class="bar"><div style="width: 65%"></div></div></div>
+          <div><span>4 stelle</span><div class="bar"><div style="width: 20%"></div></div></div>
+          <div><span>3 stelle</span><div class="bar"><div style="width: 8%"></div></div></div>
+          <div><span>2 stelle</span><div class="bar"><div style="width: 4%"></div></div></div>
+          <div><span>1 stella</span><div class="bar"><div style="width: 3%"></div></div></div>
+        </div>
       </div>
-      <div class="total-reviews">1.320 recensioni totali</div>
-      <div class="score-distribution">
-        <div class="score-bar"><span>5 stelle</span><div class="bar"><div class="fill" style="width: 65%"></div></div></div>
-        <div class="score-bar"><span>4 stelle</span><div class="bar"><div class="fill" style="width: 20%"></div></div></div>
-        <div class="score-bar"><span>3 stelle</span><div class="bar"><div class="fill" style="width: 8%"></div></div></div>
-        <div class="score-bar"><span>2 stelle</span><div class="bar"><div class="fill" style="width: 4%"></div></div></div>
-        <div class="score-bar"><span>1 stella</span><div class="bar"><div class="fill" style="width: 3%"></div></div></div>
+      <div class="filters">
+        <select><option>Tutte le valutazioni</option></select>
+        <select><option>Ordina per: Più recenti</option></select>
+        <select><option>Categoria: Servizio</option></select>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="filters">
-    <select><option>Tutte le valutazioni</option></select>
-    <select><option>Più recenti</option></select>
-    <select><option>Categoria: Servizio</option></select>
-  </section>
-
-  <main class="reviews">
-    <article class="review">
-      <div class="review-header">
-        <strong>Katiuscia</strong> <span>– 2 giorni fa</span>
+    <main class="reviews">
+      <div class="review-card">
+        <div class="top">
+          <div class="user">Katiuscia</div>
+          <div class="date">2 giorni fa</div>
+        </div>
+        <div class="rating-line">
+          <div class="stars">★★★★☆</div>
+          <div class="numeric">4.0</div>
+        </div>
+        <p class="text">
+          Una cosa inaspettata e a volte data anche per scontato che ha reso questo viaggio una splendida e rilassante esperienza è stata la correttezza, gentilezza e simpatia del personale dell’hotel e dei ragazzi di ciaoclub.
+        </p>
+        <p class="text">
+          È stata nel complesso proprio una bella vacanza rigenerante per tutta la famiglia, una cosa però che potrebbe portare il tutto ad un livello superiore potrebbe essere aggiungere un po' di più attività nella parte dell'area sportiva.
+        </p>
+        <p class="exp-date">Data dell’esperienza: 23 luglio 2024</p>
       </div>
-      <div class="review-rating">
-        <span class="stars">★★★★☆</span>
-        <span class="numeric-score">4.0</span>
-      </div>
-      <p>Una cosa inaspettata e a volte data anche per scontato che ha reso questo viaggio una splendida e rilassante esperienza è stata la correttezza, gentilezza e simpatia del personale dell’hotel e dei ragazzi di ciaoclub.</p>
-      <p class="review-date">Data dell’esperienza: 23 luglio 2024</p>
-    </article>
-  </main>
+    </main>
 
-  <footer class="footer">
-    © 2025 Portale Sardegna - Tutti i diritti riservati
-  </footer>
+    <footer class="footer">© 2025 Portale Sardegna - Tutti i diritti riservati</footer>
+  </div>
 </body>
 </html>
