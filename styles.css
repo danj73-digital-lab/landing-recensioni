@@ -1,0 +1,60 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+.header {
+  background: #007b9a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.summary {
+  margin-top: 1rem;
+}
+.score {
+  font-size: 1.5rem;
+}
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+}
+.count {
+  margin-top: 0.5rem;
+}
+.filters {
+  background: white;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+.reviews {
+  padding: 2rem;
+}
+.review {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.review h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+.review span {
+  color: #666;
+  font-size: 0.9rem;
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #007b9a;
+  color: white;
+}
