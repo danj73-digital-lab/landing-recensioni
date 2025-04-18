@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recensioni - AI Demo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Recensioni - Demo Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>Recensioni Clienti</h1>
-    </header>
+  <header class="site-header">
+    <div class="logo">DemoRecensioni</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Chi siamo</a>
+      <a href="#">Contatti</a>
+    </nav>
+  </header>
 
-    <section class="recensioni-summary">
-        <div class="average-rating">
-            <h2>Valutazione Media: 4.5 ⭐</h2>
-            <p>Basato su <strong>1,234 recensioni</strong></p>
-        </div>
-        <div class="ratings-distribution">
-            <p>⭐⭐⭐⭐⭐ 65%</p>
-            <p>⭐⭐⭐⭐ 20%</p>
-            <p>⭐⭐⭐ 10%</p>
-            <p>⭐⭐ 3%</p>
-            <p>⭐ 2%</p>
-        </div>
-    </section>
+  <section class="hero">
+    <h1>Recensioni dei clienti</h1>
+    <div class="summary-box">
+      <div class="rating">
+        <div class="score">4.3</div>
+        <div class="stars">★★★★☆</div>
+        <div class="count">1320 recensioni</div>
+      </div>
+      <div class="distribution">
+        <div><span>5 stelle</span><div class="bar"><div style="width: 65%"></div></div></div>
+        <div><span>4 stelle</span><div class="bar"><div style="width: 20%"></div></div></div>
+        <div><span>3 stelle</span><div class="bar"><div style="width: 8%"></div></div></div>
+        <div><span>2 stelle</span><div class="bar"><div style="width: 4%"></div></div></div>
+        <div><span>1 stella</span><div class="bar"><div style="width: 3%"></div></div></div>
+      </div>
+    </div>
+    <div class="filters">
+      <select id="filter-stars">
+        <option value="all">Tutte le valutazioni</option>
+        <option value="5">5 stelle</option>
+        <option value="4">4 stelle</option>
+        <option value="3">3 stelle</option>
+        <option value="2">2 stelle</option>
+        <option value="1">1 stella</option>
+      </select>
+      <select id="filter-category">
+        <option value="all">Tutte le categorie</option>
+        <option value="servizio">Servizio</option>
+        <option value="struttura">Struttura</option>
+      </select>
+    </div>
+  </section>
 
-    <section class="filters">
-        <label>Filtra per stelle:</label>
-        <select id="filter-stars">
-            <option value="all">Tutte</option>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="1">⭐</option>
-        </select>
+  <main class="reviews" id="reviews-container">
+    <!-- Recensioni generate da JS -->
+  </main>
 
-        <label>Filtra per data:</label>
-        <input type="date" id="filter-date">
+  <footer class="footer">
+    <p>&copy; 2025 DemoRecensioni - Portfolio Example</p>
+  </footer>
 
-        <label>Filtra per categoria:</label>
-        <select id="filter-category">
-            <option value="all">Tutte</option>
-            <option value="servizio">Servizio</option>
-            <option value="struttura">Struttura</option>
-        </select>
-    </section>
-
-    <section class="recensioni-list">
-        <div class="recensione">
-            <h3>Mario Rossi - 12 Aprile 2025</h3>
-            <p>⭐⭐⭐⭐⭐</p>
-            <p>Esperienza fantastica! Servizio impeccabile e staff cordiale.</p>
-        </div>
-
-        <div class="recensione">
-            <h3>Anna Bianchi - 8 Aprile 2025</h3>
-            <p>⭐⭐⭐⭐</p>
-            <p>Buona esperienza, ma qualche dettaglio potrebbe essere migliorato.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>Pagina demo creata con AI</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
