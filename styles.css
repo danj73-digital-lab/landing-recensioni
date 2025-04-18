@@ -1,1 +1,170 @@
-...
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007b9a;
+}
+
+.site-header nav a {
+  margin-left: 2rem;
+  color: #007b9a;
+  font-weight: 500;
+}
+
+.hero {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.summary-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rating .score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007b9a;
+}
+
+.rating .stars {
+  font-size: 1.5rem;
+  color: #f5b500;
+}
+
+.rating .count {
+  margin-top: 0.3rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.distribution {
+  width: 100%;
+  max-width: 400px;
+}
+
+.distribution div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bar {
+  flex: 1;
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar div {
+  background: #007b9a;
+  height: 100%;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.filters select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.reviews {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.review-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.review-card .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.review-card .rating-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.review-card .text {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.review-card .exp-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.review-card .link {
+  margin-top: 0.75rem;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #007b9a;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4rem;
+}
